@@ -1,0 +1,14 @@
+#build
+target/
+
+#jrebel
+rebel.xml
+
+#netbeans
+nb-configuration.xml
+nbactions.xml
+
+#intellij
+*.iml
+.idea/
+
