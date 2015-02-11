@@ -1,0 +1,27 @@
+Douglass Read "Doug" Cutting is an advocate and creator of
+open­source search technology. He originated Lucene and, with
+Mike Cafarella, Nutch, both open­source search technology projects
+which are now managed through the Apache Software Foundation.
+He is also the creator of Hadoop.
+
+He holds a bachelor's degree from Stanford University.
+Prior to developing Lucene, Doug held search technology positions at Excite, Apple Inc. and Xerox PARC.
+
+Lucene, a search indexer, and Nutch, a spider or crawler, are the two key components of an open­source
+general search platform, which first crawls the Web for content, and then structures it into a searchable
+index. Cutting's leadership of these two projects extended the concepts and capabilities of general opensource
+software projects such as Linux and MySQL into the important vertical domain of search. While it is
+difficult to track the total number of installations of these platforms, public announcements of the use of
+Lucene and its direct descendant Solr by various venture­backed startups indicate a significant level of
+adoption. Perhaps the most significant deployment of Lucene is Wikipedia, where it powers search for the
+entire site.
+
+In December 2004, Google Labs published a paper on the MapReduce algorithm, which allows very large
+scale computations to be trivially parallelized across large clusters of servers. Cutting, realizing the
+importance of this paper to extending Lucene into the realm of extremely large search problems, created the
+open­source Hadoop framework that allows applications based on the MapReduce paradigm to be run on
+large clusters of commodity hardware. Cutting was an employee of Yahoo!, where he led the Hadoop
+project full­time; he has since moved on to Cloudera.
+
+In July 2009, Doug Cutting was elected to the board of directors of the Apache Software Foundation, and in
+September 2010, he was elected its chairman.

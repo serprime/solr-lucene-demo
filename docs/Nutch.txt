@@ -1,0 +1,9 @@
+Nutch is an effort to build an open source web search engine based on Lucene and Java for the search and index component.
+
+Nutch is coded entirely in the Java programming language, but data is written in language-independent formats. It has a highly modular architecture, allowing developers to create plug-ins for media-type parsing, data retrieval, querying and clustering.
+The fetcher ("robot" or "web crawler") has been written from scratch specifically for this project.
+
+Nutch originated with Doug Cutting, creator of both Lucene and Hadoop, and Mike Cafarella.
+In June, 2003, a successful 100-million-page demonstration system was developed. To meet the multimachine processing needs of the crawl and index tasks, the Nutch project has also implemented a MapReduce facility and a distributed file system. The two facilities have been spun out into their own subproject, called Hadoop.
+In January, 2005, Nutch joined the Apache Incubator, from which it graduated to become a subproject of Lucene in June of that same year. Since April, 2010, Nutch has been considered an independent, top level project of the Apache Software Foundation.
+
