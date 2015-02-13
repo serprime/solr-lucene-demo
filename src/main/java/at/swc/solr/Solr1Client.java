@@ -1,5 +1,6 @@
 package at.swc.solr;
 
+import java.util.Collection;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
@@ -23,18 +24,34 @@ public final class Solr1Client {
 
         SolrServer solrServer = new HttpSolrServer("http://localhost:8983/solr/collection1");
 
-        QueryResponse response = solrServer.query(new SolrQuery("*:*"));
+        SolrQuery query = new SolrQuery("*:*");
+
+        query.setRows(100);
+
+        QueryResponse response = solrServer.query(query);
 
         System.out.println("total: " + response.getResults().getNumFound());
+
+        System.out.println("results: ");
         for (SolrDocument document : response.getResults()) {
-            document.getFieldValue(F.NAME);
+
+            Object name = document.getFieldValue(Fields.NAME);
+
+            if (name == null) {
+                continue;
+            }
+
+            System.out.print(name);
+
+            Collection<Object> fieldValues = document.getFieldValues(Fields.CAT);
+            if (fieldValues != null) {
+                for (Object fieldValue : fieldValues) {
+                    System.out.print(" (" + fieldValue + ")");
+                }
+            }
+            
+            System.out.println("");
         }
-
-
-    }
-
-    private static class F {
-        public static final String NAME = "name";
     }
 
 }
